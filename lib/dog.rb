@@ -7,6 +7,7 @@ class Dog
       @name = name
       @breed = breed
     end
+
   
     def self.drop_table
       sql = <<-SQL
@@ -29,7 +30,7 @@ class Dog
     end
   
     def save
-        
+
         if self.id
             self.update
 
